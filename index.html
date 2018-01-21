@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<title>天气APP</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery3.2.1.min.js"></script>
+	<script src="js/rem.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+    <!-- 第一个模块开始 当前天气-->
+	<div class="first">
+	     <div class="pos"></div>
+	     <div class="air">
+	     	<h4>空气</h4>
+	     	<h5></h5>
+	     </div>
+	     <div class="title1"></div>
+	     <div class="title2">晴天</div>
+	     <div class="title3">
+	        <!-- span文字标签 -->
+	         <span class="wind_der"></span>
+	         <span class="wet wind_level"></span>
+	     </div>
+	     <div class="title4">你若安好，便是晴天</div>
+	 </div>
+	<!-- 第一个模块结束-->
+	<!-- 今天和明天情况开始 -->
+	<div class="second">
+		<div class="today">
+		     <div class="top">
+		     	<div class="todayText">今天</div>
+		     	<div class="tem">
+		     		<span class="heigher">2°</span>
+		     		<span>/</span>
+		     		<span class="lower">-11°</span>
+		     	</div>
+		     </div>
+		     <div class="bottom">
+		     	<div class="con">晴转多云</div>
+		     	<div class="conPic"></div>
+		     </div>
+		</div>
+		<div class="tomorrow">
+		     <div class="top">
+		     	<div class="tomorrowText">明天</div>
+		     	<div class="tem">
+		     		<span class="heigher">3°</span>
+		     		<span>/</span>
+		     		<span class="lower">-13°</span>
+		     	</div>
+		     </div>
+		     <div class="bottom">
+		     	<div class="con">晴</div>
+		     	<div class="conPic tomorrow_icon"></div>
+		     </div>
+		</div>
+	</div>
+	<!-- <- 今天和明天结束 -->
+	<!-- 24小时 -->
+	<div class="third">
+	  <div class="wrap">
+		<!-- <div class="box">
+			<div class="time">
+				<span>12</span>
+				<span>:00</span>
+			</div>
+			<div class="icon"></div>
+			<div class="timeTem">1°</div>
+		</div>
+		<div class="box">
+			<div class="time">
+				<span>12</span>
+				<span>:00</span>
+			</div>
+			<div class="icon"></div>
+			<div class="timeTem">1°</div>
+		</div>
+		<div class="box">
+			<div class="time">
+				<span>12</span>
+				<span>:00</span>
+			</div>
+			<div class="icon"></div>
+			<div class="timeTem">1°</div>
+		</div>
+		<div class="box">
+			<div class="time">
+				<span>12</span>
+				<span>:00</span>
+			</div>
+			<div class="icon"></div>
+			<div class="timeTem">1°</div>
+		</div>
+		<div class="box">
+			<div class="time">
+				<span>12</span>
+				<span>:00</span>
+			</div>
+			<div class="icon"></div>
+			<div class="timeTem">1°</div>
+		</div>
+		<div class="box">
+			<div class="time">
+				<span>12</span>
+				<span>:00</span>
+			</div>
+			<div class="icon"></div>
+			<div class="timeTem">1°</div>
+		</div> -->
+		</div>
+	</div>
+	<!-- 24小时结束 -->
+	<!-- 最近七天的 -->
+	<div class="forth">
+	  <div class="wrap wrap1">
+		 <!-- <div class="box">
+			<div class="time">
+				<span>01</span>
+				<span>/15</span>
+			</div> -->
+			<!-- <div class="wea">多云</div>
+			<div class="icon"></div>
+			<div class="timeTem1">3°</div>
+			<div class="timeTem2">-12</div>
+			<div class="wind">西北风</div>
+			<div class="windId">3级</div>
+		 </div> -->
+		 <!-- <div class="box">
+			<div class="time">
+				<span>01</span>
+				<span>/15</span>
+			</div>
+			<div class="wea">多云</div>
+			<div class="icon"></div>
+			<div class="timeTem1">3°</div>
+			<div class="timeTem2">-12°</div>
+			<div class="wind">西北风</div>
+			<div class="windId">3级</div>
+		 </div>
+		 <div class="box">
+			<div class="time">
+				<span>01</span>
+				<span>/15</span>
+			</div>
+			<div class="wea">多云</div>
+			<div class="icon"></div>
+			<div class="timeTem1">3°</div>
+			<div class="timeTem2">-12°</div>
+			<div class="wind">西北风</div>
+			<div class="windId">3级</div>
+		 </div>
+		 <div class="box">
+			<div class="time">
+				<span>01</span>
+				<span>/15</span>
+			</div>
+			<div class="wea">多云</div>
+			<div class="icon"></div>
+			<div class="timeTem1">3°</div>
+			<div class="timeTem2">-12°</div>
+			<div class="wind">西北风</div>
+			<div class="windId">3级</div>
+		 </div>
+		 <div class="box">
+			<div class="time">
+				<span>01</span>
+				<span>/15</span>
+			</div>
+			<div class="wea">多云</div>
+			<div class="icon"></div>
+			<div class="timeTem1">3°</div>
+			<div class="timeTem2">-12°</div>
+			<div class="wind">西北风</div>
+			<div class="windId">3级</div>
+		 </div>
+		 <div class="box">
+			<div class="time">
+				<span>01</span>
+				<span>/15</span>
+			</div>
+			<div class="wea">多云</div>
+			<div class="icon"></div>
+			<div class="timeTem1">3°</div>
+			<div class="timeTem2">-12°</div>
+			<div class="wind">西北风</div>
+			<div class="windId">3级</div>
+		 </div>
+		 <div class="box">
+			<div class="time">
+				<span>01</span>
+				<span>/15</span>
+			</div>
+			<div class="wea">多云</div>
+			<div class="icon"></div>
+			<div class="timeTem1">3</div>
+			<div class="timeTem2">-12</div>
+			<div class="wind">西北风</div>
+			<div class="windId">3级</div>
+		 </div> -->
+	<!-- 最近七天的结束 -->
+	</div>
+	</div>
+	<div class="fifth">
+		<div class="wrap">
+		    <div class="box">
+		   	<div class="icon"></div>
+		   	<div class="abc">不带伞</div>
+			<div class="abcd">雨伞</div>
+		</div>
+		<div class="box1">
+		   	<div class="icon"></div>
+		   	<div class="abc">冷</div>
+			<div class="abcd">穿衣</div>
+		</div>
+		<div class="box2">
+		   	<div class="icon"></div>
+		   	<div class="abc">较弱</div>
+			<div class="abcd">防晒</div>
+		</div>
+		<div class="box3">
+		   	<div class="icon"></div>
+		   	<div class="abc">轻易发</div>
+			<div class="abcd">感冒</div>
+		</div>
+	</div>
+	</div>	
+	<div class="six">
+		<div class="wrap">
+			<div class="box">
+		   	   <div class="icon"></div>
+		   	  <div class="abc">较适宜</div>
+			  <div class="abcd">洗车</div>
+		    </div>
+		    <div class="box1">
+		   	   <div class="icon"></div>
+		   	  <div class="abc">较不易</div>
+			  <div class="abcd">运动</div>
+		    </div>
+		    <div class="box2">
+		   	   <div class="icon"></div>
+		   	  <div class="abc">不易</div>
+			  <div class="abcd">钓鱼</div>
+		    </div>
+		    <div class="box3">
+		   	   <div class="icon"></div>
+		   	  <div class="abc">良好</div>
+			  <div class="abcd">交通</div>
+		    </div>
+		</div>
+	</div>
+	<!-- 城市 -->
+	<div class="seven">
+		<div class="wrap">
+			<div class="box">
+		   	  <div class="abc">数据来源于中国天气网</div>
+		    </div>
+		</div>
+	</div>	
+	<div class="city">
+		<div class="search">
+		<!-- 可以输入文字 ，搜索框-->
+			<input type="text" class="searchBox" placeholder="请输入要搜索的城市名称">
+			<div class="button">取消</div>
+		</div>
+		<!-- <div class="citys">
+			<div class="title">山西省</div>
+			<div class="con">
+				<div class="box">太原</div>
+				<div class="box">晋城</div>
+				<div class="box">长治</div>
+				<div class="box">临汾</div>
+				<div class="box">吕梁</div>
+				<div class="box">阳泉</div>
+			</div>
+		</div> -->
+	</div>
+	
+	<!-- 城市结束 -->
+
+</body>
+</html> 
